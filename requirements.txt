@@ -1,0 +1,5 @@
+spacy==2.1.9
+torch==1.8.1
+torchtext==0.5.0
+pandas==1.2.4
+scikit_learn==0.24.2
