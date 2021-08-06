@@ -47,7 +47,7 @@ def load_dataset(batch_size):
     OUTPUT.build_vocab(train.Output)
     print(vars(train.examples[0]))
     train_iter, val_iter, test_iter = BucketIterator.splits(
-        (train, val, test), batch_size=batch_size, repeat=False, sort_key=lambda x: x)
+        (train, val, test), batch_size=batch_size, repeat=False, sort_key=lambda x: x.Input)
 
 
     return train_iter, val_iter, test_iter,INPUT,OUTPUT
